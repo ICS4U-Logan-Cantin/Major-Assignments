@@ -10,12 +10,7 @@ import java.util.Scanner;
 
 public class MaxRun {
 
-    public static void main(String[] args) {
-
-        // Getting input string from the user
-        Scanner iostream = new Scanner(System.in);
-        String input = iostream.nextLine();
-
+    public static int maxRun(String input) {
         // Initializing variables
         int maxRun = 0;
         int pivot = 0;
@@ -41,8 +36,35 @@ public class MaxRun {
             pivot += tempRun;
         }
 
-        // Print size of the largest run
-        System.out.println(maxRun);
-        iostream.nextLine();
+        return maxRun;
+    }
+
+    public static void main(String[] args) {
+
+        // Getting input string from the user
+        Scanner iostream = new Scanner(System.in);
+
+        while (true){
+            try {
+                // Read new input
+                String input = iostream.nextLine();
+
+                // If string is empty, exit program
+                if (input.isBlank()) {
+                    break;
+                }
+
+                // Calculate the size of the largest run
+                int largestRun = maxRun(input);
+
+                // Print size of the largest run
+                System.out.println(largestRun);
+            }
+
+            // End of file. Stop execution.
+            catch (Exception e) {
+                break;
+            }
+        }
     }
 }

@@ -8,6 +8,9 @@
 
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+import static java.lang.System.out;
+
 public class Blowup {
 
     // Multiplies a given character a certain amount of times
@@ -25,18 +28,7 @@ public class Blowup {
         return new String(output);
     }
 
-    public static void main(String[] args) {
-
-        // Initialize Scanner
-        Scanner iostream = new Scanner(System.in);
-
-        // Reading input from the user
-        String inputString = iostream.nextLine();
-
-        // If the string contains non-alphanumeric characters
-        if (!inputString.matches("[A-Za-z0-9]*")) {
-            System.out.println("Only enter alphanumerical characters.");
-        }
+    public static String blowup(String inputString) {
 
         // Initializing variables
         int index = 0;
@@ -72,6 +64,7 @@ public class Blowup {
                 int multiplier = Integer.parseInt(String.valueOf(tempChar));
                 outputString.append(Blowup.charMultiplier(multiplier, nextChar));
             }
+
             // Character is a letter
             else {
                 // Add it to the output string
@@ -82,8 +75,41 @@ public class Blowup {
             index++;
         }
 
-        // Print output
-        System.out.println(outputString);
+        // Returning the output string
+        return outputString.toString();
+    }
 
+    public static void main(String[] args) {
+
+        // Initialize Scanner
+        Scanner iostream = new Scanner(System.in);
+
+        // Looping through all the lines of input
+        while (true) {
+
+            try {
+                String inputString = iostream.nextLine();
+
+                // Checking that the string is not blank.
+                if (!inputString.isBlank()) {
+
+                    // Calculate blowup string
+                    String outputString = blowup(inputString);
+
+                    // Print the string
+                    System.out.println(outputString);
+                }
+
+                // Empty string: alert the user
+                else {
+                    System.out.println("Please enter a string to be blown up.");
+                }
+            }
+
+            // No more input. Stop execution.
+            catch (Exception e) {
+                break;
+            }
+        }
     }
 }
