@@ -1,0 +1,4 @@
+﻿  BubbleSort.cpp
+C:\Users\Logan\Desktop\Major-Assignments\Assignment-3\BubbleSort\BubbleSort\BubbleSort.cpp(33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Logan\Desktop\Major-Assignments\Assignment-3\BubbleSort\BubbleSort\BubbleSort.cpp(54): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  BubbleSort.vcxproj -> C:\Users\Logan\Desktop\Major-Assignments\Assignment-3\BubbleSort\Debug\BubbleSort.exe

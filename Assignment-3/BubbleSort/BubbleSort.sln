@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleSort", "BubbleSort\BubbleSort.vcxproj", "{EFD9E242-ED04-4C65-8997-3C56240C54C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Debug|x64.ActiveCfg = Debug|x64
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Debug|x64.Build.0 = Debug|x64
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Debug|x86.ActiveCfg = Debug|Win32
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Debug|x86.Build.0 = Debug|Win32
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Release|x64.ActiveCfg = Release|x64
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Release|x64.Build.0 = Release|x64
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Release|x86.ActiveCfg = Release|Win32
+		{EFD9E242-ED04-4C65-8997-3C56240C54C1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2BC4808-7415-44AE-9842-5E63984320F9}
+	EndGlobalSection
+EndGlobal
