@@ -127,7 +127,7 @@ int main() {
 
 	// Array of values
 	vi values;
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 250; i++) {
 		values.push_back( random_number() );
 	}
 	
