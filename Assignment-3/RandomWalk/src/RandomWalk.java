@@ -226,7 +226,6 @@ public class RandomWalk extends JPanel {
 
             // Alerting the user
             JOptionPane.showMessageDialog(null, "You win!");
-            exit();
         }
 
         // Handling errors
